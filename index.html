@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+        .content {
+            width: 600px;
+            height: 100px;
+            margin: 50px auto;
+            padding: 5px;
+            font-size: 30px;
+            line-height: 1.5;
+            font-weight: bold;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .text {
+            display: inline-block;
+            position: absolute;
+            right: -100%; /* Start position off-screen to the right */
+            animation: slideIn 10s linear infinite;
+        }
+
+        /* Keyframes for animation */
+        @keyframes slideIn {
+            0% {
+                right: -100%; /* Start off-screen to the right */
+            }
+            100% {
+                right: 100%; /* End off-screen to the left */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ex hic, laborum molestiae
+        obcaecati saepe
+        voluptas voluptates. A ab amet, at blanditiis cupiditate necessitatibus officia repellat repellendus ut vitae?
+        Rem?
+    </p>
+</div>
+</body>
+</html>
